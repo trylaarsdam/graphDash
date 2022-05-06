@@ -1,19 +1,19 @@
 <template>
   <div id="mainchart-container">
-      <HealthKitChart v-if="this.$store.state.mode == 'healthKit' && renderComponent" :options="value"/>
-      <BatteryChart v-if="this.$store.state.mode == 'eHealth' && renderComponent" :dateRange="this.$store.state.dateRange"/>
+      <HealthKitChart v-if="this.$store.state.graph == 'bar' && renderComponent" :options="value"/>
+      <PieChart v-if="this.$store.state.graph == 'pie' && renderComponent" :dateRange="this.$store.state.dateRange"/>
   </div>
 </template>
 
 <script>
 import HealthKitChart from "./HealthKitChart.vue"
-import BatteryChart from "./BatteryChart.vue"
+import PieChart from "./PieChart.vue"
 
 export default {
   name: "MainChart",
 	components: {
     HealthKitChart,
-    BatteryChart
+    PieChart
   },
   methods: {
     forceRerender() {

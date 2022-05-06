@@ -29,7 +29,7 @@ function createGraphData(state) {
 }
 
 const state = {
-  graph: "healthKit",
+  graph: "bar",
   mode: "healthKit",
   deptList: [],
   jsonData: [],
@@ -57,6 +57,9 @@ const actions = {
 }
 
 const mutations = {
+  SET_GRAPH(state, graph) {
+    state.graph = graph 
+  },
   ADD_DEPT(state, dept) {
     state.deptList.push({
       name: dept.replace(/\W/, "_").toLowerCase(),

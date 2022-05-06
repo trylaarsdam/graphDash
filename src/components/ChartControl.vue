@@ -46,6 +46,7 @@
       :invalid-message="invalidMessage"
       :title="title"
       :disabled="disabled"
+      @change="graphType"
       :auto-filter="autoFilter"
       :auto-highlight="autoHighlight"
       :value="initialValue"
@@ -73,12 +74,6 @@ export default {
     "initialValue": "",
     "graphOptions": [
       {
-        name: "line",
-        label: "Line",
-        value: "line",
-        disabled: false,
-      },
-      {
         name: "bar",
         label: "Bar",
         value: "bar",
@@ -90,18 +85,16 @@ export default {
         value: "pie",
         disabled: false,
       },
-      {
-        name: "scatter",
-        label: "Scatter",
-        value: "scatter",
-        disabled: false,
-      }
     ]
   }),
   computed: {
 
   },
   methods: {
+    graphType(item) {
+      console.log("graphType: ", item);
+      this.$store.commit("SET_GRAPH", item);
+    },
     selectDept(item) {
       console.log("select dept", item);
       let dept = this.$store.state.deptList.find(dept => dept.name === item);
