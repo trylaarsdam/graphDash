@@ -6,6 +6,7 @@ module.exports = defineConfig({
   runtimeCompiler: true,
   devServer: {
     port: "8080",
-    host: "0.0.0.0"
+    allowedHosts: "*",
+    host: "0.0.0.0",
   }
 })
