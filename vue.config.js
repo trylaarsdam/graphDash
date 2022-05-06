@@ -5,6 +5,6 @@ module.exports = defineConfig({
   ],
   runtimeCompiler: true,
   devServer: {
-    disableHostCheck: true
+    port: "0.0.0.0",
   }
 })
