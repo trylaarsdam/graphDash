@@ -4,4 +4,7 @@ module.exports = defineConfig({
     'vuetify'
   ],
   runtimeCompiler: true,
+  devServer: {
+    disableHostCheck: true
+  }
 })
