@@ -1,0 +1,60 @@
+{
+  "name": "ehealth-graphing",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "@carbon/charts-vue": "^0.57.0",
+    "@carbon/icons-vue": "^10.49.1",
+    "@carbon/vue": "^2.43.1",
+    "@popperjs/core": "^2.11.5",
+    "@vue/composition-api": "^1.6.0",
+    "bootstrap": "^5.1.3",
+    "bootstrap-vue": "^2.22.0",
+    "carbon-components": "^10.56.0",
+    "convert-csv-to-json": "^1.3.3",
+    "core-js": "^3.8.3",
+    "d3": "^7.4.4",
+    "material-components-web": "^14.0.0",
+    "pinia": "^2.0.14",
+    "vue": "^2.6.14",
+    "vuex": "^3.6.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.16",
+    "@babel/eslint-parser": "^7.12.16",
+    "@vue/cli-plugin-babel": "~5.0.0",
+    "@vue/cli-plugin-eslint": "~5.0.0",
+    "@vue/cli-service": "~5.0.0",
+    "eslint": "^7.32.0",
+    "eslint-plugin-vue": "^8.0.3",
+    "sass": "~1.32.0",
+    "sass-loader": "^10.0.0",
+    "vue-cli-plugin-vuetify": "~2.4.8",
+    "vue-template-compiler": "^2.6.14",
+    "vuetify-loader": "^1.7.0"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "parserOptions": {
+      "parser": "@babel/eslint-parser"
+    },
+    "rules": {}
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}
